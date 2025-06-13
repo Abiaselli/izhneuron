@@ -1,0 +1,12 @@
+
+* PTM 45nm MOSFETs - Subcircuit Wrapper Library
+
+* NMOS Wrapper
+.SUBCKT PTM_NMOS D G S B
+M1 D G S B NMOS L=45n W=1u
+.ENDS
+
+* PMOS Wrapper (assumes a corresponding PMOS model is defined elsewhere)
+.SUBCKT PTM_PMOS D G S B
+M1 D G S B PMOS L=45n W=1u
+.ENDS
